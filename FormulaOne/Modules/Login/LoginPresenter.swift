@@ -6,6 +6,8 @@
 //  Copyright © 2018 Antonio Ivcec. All rights reserved.
 //
 
+import UIKit
+
 class LoginPresenter {
     
     private unowned var view: LoginViewInterface
@@ -21,8 +23,13 @@ class LoginPresenter {
 
 extension LoginPresenter: LoginPresenterInterface {
     func didTapLogin() {
-        interactor.performLogin {
-            self.wireframe.navigateToDrivers()
+        
+        if let viewController = view as? UIViewController {
+            interactor.performLogin(from: viewController, onSuccess: {
+                self.wireframe.navigateToDrivers()
+            }) { error in
+                self.wireframe.showErrorAlert(with: error)
+            }
         }
     }
 }

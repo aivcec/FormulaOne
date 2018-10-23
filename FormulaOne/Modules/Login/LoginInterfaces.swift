@@ -21,5 +21,5 @@ protocol LoginPresenterInterface: PresenterInterface {
 }
 
 protocol LoginInteractorInterface: InteractorInterface {
-    func performLogin(completion: @escaping (() -> ()))
+    func performLogin(from viewController: UIViewController, onSuccess: @escaping (() -> ()), onError: @escaping ((String) -> ()))
 }

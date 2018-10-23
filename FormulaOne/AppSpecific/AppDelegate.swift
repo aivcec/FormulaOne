@@ -14,12 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    private let sessionInfo: SessionInfo = SessionInfo()
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        let sessionInfo = SessionInfo()
         let appWireframe = AppWireframe(sessionInfo: sessionInfo)
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = appWireframe.viewController

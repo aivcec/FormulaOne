@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="FormulaOne" customModuleProvider="target">
             <connections>
+                <outlet property="avatarImageView" destination="Aqj-8u-2OG" id="w3p-eV-rvz"/>
                 <outlet property="avatarWidthConstraint" destination="IsI-0s-qXG" id="pgZ-dK-JQA"/>
                 <outlet property="emailLabel" destination="j1A-JI-DUc" id="HDR-Hm-Yw0"/>
                 <outlet property="nameLabel" destination="0n7-gZ-l0d" id="5IM-CQ-C89"/>
@@ -51,14 +55,14 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0n7-gZ-l0d">
-                    <rect key="frame" x="164.5" y="250" width="46" height="20.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0n7-gZ-l0d">
+                    <rect key="frame" x="187.5" y="250" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1A-JI-DUc">
-                    <rect key="frame" x="166.5" y="280.5" width="42.5" height="20.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1A-JI-DUc">
+                    <rect key="frame" x="187.5" y="260" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -99,6 +103,6 @@
         </view>
     </objects>
     <resources>
-        <image name="profile-image" width="512" height="341"/>
+        <image name="profile-image" width="256" height="256"/>
     </resources>
 </document>

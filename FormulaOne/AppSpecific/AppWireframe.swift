@@ -20,17 +20,19 @@ class AppWireframe: BaseWireframe {
         super.init(viewController: navController)
         
         if sessionInfo.isActiveSession {
-            setupLoginModule()
-        } else {
             setupDriversModule()
+        } else {
+            setupLoginModule()
         }
     }
     
     func setupLoginModule() {
-        navigationController?.setRootWireframe(LoginWireframe())
+        let loginWireframe = LoginWireframe(sessionInfo: sessionInfo)
+        navigationController?.setRootWireframe(loginWireframe)
     }
     
     func setupDriversModule() {
-        navigationController?.setRootWireframe(TabBarWireframe())
+        let tabBarWireframe = TabBarWireframe(sessionInfo: sessionInfo)
+        navigationController?.setRootWireframe(tabBarWireframe)
     }
 }

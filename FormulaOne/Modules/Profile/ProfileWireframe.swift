@@ -7,12 +7,16 @@
 //
 
 class ProfileWireframe: BaseWireframe {
-    init() {
+    
+    private let sessionInfo: SessionInfo
+    
+    init(sessionInfo: SessionInfo) {
+        self.sessionInfo = sessionInfo
         let vc = ProfileViewController()
         super.init(viewController: vc)
         
         let interactor = ProfileInteractor()
-        let presenter = ProfilePresenter(wireframe: self, view: vc, interactor: interactor)
+        let presenter = ProfilePresenter(sessionInfo: sessionInfo, wireframe: self, view: vc, interactor: interactor)
         vc.presenter = presenter
     }
 }
@@ -20,6 +24,7 @@ class ProfileWireframe: BaseWireframe {
 extension ProfileWireframe: ProfileWireframeInterface {
     
     func navigateToLogin() {
-        navigationController?.setRootWireframe(LoginWireframe())
+        let loginWireframe = LoginWireframe(sessionInfo: sessionInfo)
+        navigationController?.setRootWireframe(loginWireframe)
     }
 }

@@ -10,11 +10,11 @@ import UIKit
 
 class TabBarWireframe: BaseWireframe {
     
-    init() {
+    init(sessionInfo: SessionInfo) {
         let vc = UITabBarController()
         vc.viewControllers = [
             DriversWireframe().viewController,
-            ProfileWireframe().viewController
+            ProfileWireframe(sessionInfo: sessionInfo).viewController
         ]
         vc.tabBar.tintColor = .black
         

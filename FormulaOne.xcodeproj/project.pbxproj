@@ -206,14 +206,14 @@
 		03EF4687217F0F3D00182884 /* DriverList */ = {
 			isa = PBXGroup;
 			children = (
+				03B56BC3217F8AD100C8EA2C /* DriversInterfaces.swift */,
+				03B56BB6217F7CAE00C8EA2C /* DriversWireframe.swift */,
 				031C42F4217F384800A22789 /* DriversViewController.swift */,
 				03EF468B217F0F6400182884 /* DriversViewController.xib */,
 				03EF4696217F10E200182884 /* DriverCell.swift */,
 				03EF4697217F10E200182884 /* DriverCell.xib */,
 				03EF469D217F1BB100182884 /* DriverHeaderView.swift */,
 				03EF469E217F1BB100182884 /* DriverHeaderView.xib */,
-				03B56BB6217F7CAE00C8EA2C /* DriversWireframe.swift */,
-				03B56BC3217F8AD100C8EA2C /* DriversInterfaces.swift */,
 			);
 			path = DriverList;
 			sourceTree = "<group>";

@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
 
     var presenter: ProfilePresenterInterface!
     
+    @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var avatarWidthConstraint: NSLayoutConstraint!
@@ -28,7 +29,14 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        presenter.fetchProfileImage { image in
+            DispatchQueue.main.async {
+                self.avatarImageView.image = image
+            }
+        }
+        
+        nameLabel.text = presenter.name
         avatarWidthConstraint.constant = Device.isSmallDevice ? 150 : 200
     }
     

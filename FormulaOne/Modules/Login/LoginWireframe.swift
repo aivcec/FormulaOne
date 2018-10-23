@@ -8,7 +8,11 @@
 
 class LoginWireframe: BaseWireframe {
     
-    init() {
+    private let sessionInfo: SessionInfo
+    
+    init(sessionInfo: SessionInfo) {
+        self.sessionInfo = sessionInfo
+        
         let vc = LoginViewController()
         super.init(viewController: vc)
         
@@ -22,6 +26,7 @@ class LoginWireframe: BaseWireframe {
 extension LoginWireframe: LoginWireframeInterface {
     
     func navigateToDrivers() {
-        navigationController?.setRootWireframe(TabBarWireframe())
+        let tabBarWireframe = TabBarWireframe(sessionInfo: sessionInfo)
+        navigationController?.setRootWireframe(tabBarWireframe)
     }
 }

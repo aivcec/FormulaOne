@@ -9,6 +9,8 @@
 import UIKit
 import Alamofire
 
+typealias ImageCompletionBlock = (UIImage) -> ()
+
 protocol ProfileWireframeInterface: WireframeInterface {
     func navigateToLogin()
 }
@@ -17,9 +19,14 @@ protocol ProfileViewInterface: ViewInterface {
 }
 
 protocol ProfilePresenterInterface: PresenterInterface {
+    func fetchProfileImage(completion: @escaping ImageCompletionBlock)
+
+    var name: String { get }
+    
     func didTapLogout()
 }
 
 protocol ProfileInteractorInterface: InteractorInterface {
-    func performLogout(completion: @escaping (() -> ()))
+    func fetchProfileImage(imagePath: String, completion: @escaping ImageCompletionBlock)
+    func performLogout()
 }
