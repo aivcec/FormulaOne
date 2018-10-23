@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="FormulaOne" customModuleProvider="target">
             <connections>
+                <outlet property="avatarWidthConstraint" destination="IsI-0s-qXG" id="pgZ-dK-JQA"/>
+                <outlet property="emailLabel" destination="j1A-JI-DUc" id="HDR-Hm-Yw0"/>
+                <outlet property="nameLabel" destination="0n7-gZ-l0d" id="5IM-CQ-C89"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -52,13 +55,13 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0n7-gZ-l0d">
-                    <rect key="frame" x="164.5" y="266" width="46" height="20.5"/>
+                    <rect key="frame" x="164.5" y="260" width="46" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1A-JI-DUc">
-                    <rect key="frame" x="166.5" y="297.5" width="42.5" height="20.5"/>
+                    <rect key="frame" x="166.5" y="290.5" width="42.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -79,13 +82,16 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signOutTapped:" destination="-1" eventType="touchUpInside" id="Mzj-i1-eml"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="j1A-JI-DUc" firstAttribute="top" secondItem="0n7-gZ-l0d" secondAttribute="bottom" constant="11" id="1W8-Bt-02r"/>
+                <constraint firstItem="j1A-JI-DUc" firstAttribute="top" secondItem="0n7-gZ-l0d" secondAttribute="bottom" constant="10" id="1W8-Bt-02r"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4pD-Rh-6wb" secondAttribute="bottom" constant="20" id="EAf-Zr-yu6"/>
-                <constraint firstItem="0n7-gZ-l0d" firstAttribute="top" secondItem="a7F-Lc-2el" secondAttribute="bottom" constant="26" id="KGA-Qq-9Ql"/>
+                <constraint firstItem="0n7-gZ-l0d" firstAttribute="top" secondItem="a7F-Lc-2el" secondAttribute="bottom" constant="20" id="KGA-Qq-9Ql"/>
                 <constraint firstItem="4pD-Rh-6wb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="OkI-Fl-vN5"/>
                 <constraint firstItem="a7F-Lc-2el" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SJS-Zw-nr4"/>
                 <constraint firstItem="j1A-JI-DUc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="XU5-l1-h6N"/>

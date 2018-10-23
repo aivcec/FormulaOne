@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031C42F1217F34B900A22789 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C42F0217F34B900A22789 /* Device.swift */; };
 		03AFCDBE217777450089D977 /* Pods_FormulaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288A4FCD7E84015FE43C6334 /* Pods_FormulaOne.framework */; };
 		03EE2E5221774FB100E73F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE2E5121774FB100E73F23 /* AppDelegate.swift */; };
 		03EE2E5421774FB100E73F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE2E5321774FB100E73F23 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031C42F0217F34B900A22789 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		03EE2E4E21774FB100E73F23 /* FormulaOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EE2E5121774FB100E73F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03EE2E5321774FB100E73F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031C42EE217F34A200A22789 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03EF469B217F134A00182884 /* NSObject+className.swift */,
+				03EF46A1217F278C00182884 /* UIView+grayscale.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		031C42EF217F34AC00A22789 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				031C42F0217F34B900A22789 /* Device.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
 		03EE2E4521774FB100E73F23 = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +159,9 @@
 		03EF469A217F132800182884 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				031C42EF217F34AC00A22789 /* Device */,
 				03EF46A7217F2C8E00182884 /* Interfaces */,
-				03EF469B217F134A00182884 /* NSObject+className.swift */,
-				03EF46A1217F278C00182884 /* UIView+grayscale.swift */,
+				031C42EE217F34A200A22789 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -305,6 +324,7 @@
 				03EF468C217F0F6400182884 /* DriverListVC.swift in Sources */,
 				03EF469C217F134A00182884 /* NSObject+className.swift in Sources */,
 				03EF46A2217F278C00182884 /* UIView+grayscale.swift in Sources */,
+				031C42F1217F34B900A22789 /* Device.swift in Sources */,
 				03EE2E5421774FB100E73F23 /* ViewController.swift in Sources */,
 				03EF46A5217F29A100182884 /* ProfileVC.swift in Sources */,
 				03EF469F217F1BB100182884 /* DriverHeaderView.swift in Sources */,

@@ -10,6 +10,10 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var avatarWidthConstraint: NSLayoutConstraint!
+    
     init() {
         super.init(nibName: "ProfileVC", bundle: nil)
     }
@@ -21,5 +25,9 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        avatarWidthConstraint.constant = Device.isSmallDevice ? 150 : 200
+    }
+    
+    @IBAction func signOutTapped(_ sender: UIButton) {
     }
 }
