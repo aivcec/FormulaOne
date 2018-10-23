@@ -11,5 +11,13 @@ class DriversWireframe: BaseWireframe {
     init() {
         let vc = DriversViewController()
         super.init(viewController: vc)
+        
+        let interactor = DriversInteractor()
+        let presenter = DriversPresenter(wireframe: self, view: vc, interactor: interactor)
+        vc.presenter = presenter
     }
+}
+
+extension DriversWireframe: DriversWireframeInterface {
+    
 }

@@ -10,6 +10,12 @@ import UIKit
 
 class DriversViewController: UIViewController {
     
+    var presenter: DriversPresenterInterface! {
+        didSet {
+            presenter.viewDidLoad()
+        }
+    }
+    
     private let itemWidth: CGFloat = 120
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -49,7 +55,7 @@ class DriversViewController: UIViewController {
 extension DriversViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return presenter.driverData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -71,8 +77,12 @@ extension DriversViewController: UICollectionViewDelegateFlowLayout, UICollectio
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DriverCell.className, for: indexPath) as! DriverCell
         
-        cell.nameLabel.text = "Antonio"
-        cell.nationalityLabel.text = "Croatia"
+        if presenter.driverData.count - 4 == indexPath.row {
+            presenter.fetchNewPage()
+        }
+        
+        let driverData = presenter.driverData[indexPath.item]
+        cell.configureWith(driverData: driverData)
         
         return cell
     }
@@ -84,5 +94,12 @@ extension DriversViewController: UICollectionViewDelegateFlowLayout, UICollectio
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         let sideInsets = (collectionView.bounds.width - (2*itemWidth + 15))/2
         return UIEdgeInsets(top: 5, left: sideInsets, bottom: 5, right: sideInsets)
+    }
+}
+
+extension DriversViewController: DriversViewInterface {
+    
+    func reloadData() {
+        collectionView.reloadData()
     }
 }

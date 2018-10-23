@@ -16,4 +16,9 @@ class DriverCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    func configureWith(driverData: DriverData) {
+        nameLabel.text = driverData.name
+        nationalityLabel.text = driverData.nationality
+    }
 }

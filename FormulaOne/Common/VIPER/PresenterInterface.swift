@@ -7,4 +7,12 @@
 //
 
 protocol PresenterInterface: class {
+    func viewDidLoad()
+}
+
+extension PresenterInterface {
+    func viewDidLoad() {
+    
+        preconditionFailure("Implementation pending...")
+    }
 }
