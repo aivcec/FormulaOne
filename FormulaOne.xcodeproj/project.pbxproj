@@ -249,17 +249,9 @@
 			children = (
 				031C4304217F65AE00A22789 /* VIPER */,
 				031C42EF217F34AC00A22789 /* Device */,
-				03EF46A7217F2C8E00182884 /* Interfaces */,
 				031C42EE217F34A200A22789 /* Extensions */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		03EF46A7217F2C8E00182884 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		CA8321BCF1CC3230310746DE /* Frameworks */ = {
