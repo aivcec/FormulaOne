@@ -10,6 +10,8 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    var presenter: ProfilePresenterInterface!
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var avatarWidthConstraint: NSLayoutConstraint!
@@ -31,5 +33,10 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func signOutTapped(_ sender: UIButton) {
+        presenter.didTapLogout()
     }
+}
+
+extension ProfileVC: ProfileViewInterface {
+    
 }

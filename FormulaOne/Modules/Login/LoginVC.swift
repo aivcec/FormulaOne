@@ -10,6 +10,8 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    var presenter: LoginPresenterInterface!
+    
     init() {
         super.init(nibName: "LoginVC", bundle: nil)
     }
@@ -24,5 +26,10 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginTapped(_ sender: UIButton) {
+        presenter.didTapLogin()
     }
+}
+
+extension LoginVC: LoginViewInterface {
+    
 }

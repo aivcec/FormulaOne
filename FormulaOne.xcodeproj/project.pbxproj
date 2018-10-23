@@ -11,7 +11,25 @@
 		031C42F5217F384800A22789 /* DriversVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C42F4217F384800A22789 /* DriversVC.swift */; };
 		031C4300217F3EF000A22789 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C42FE217F3EF000A22789 /* LoginVC.swift */; };
 		031C4301217F3EF000A22789 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031C42FF217F3EF000A22789 /* LoginVC.xib */; };
+		031C4303217F421B00A22789 /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C4302217F421B00A22789 /* SessionInfo.swift */; };
+		031C4306217F65C400A22789 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C4305217F65C400A22789 /* BaseWireframe.swift */; };
+		031C4308217F725600A22789 /* AppWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C4307217F725600A22789 /* AppWireframe.swift */; };
+		031C430A217F745100A22789 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C4309217F745100A22789 /* LoginInterfaces.swift */; };
 		03AFCDBE217777450089D977 /* Pods_FormulaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288A4FCD7E84015FE43C6334 /* Pods_FormulaOne.framework */; };
+		03B56BB5217F7C7300C8EA2C /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BB4217F7C7300C8EA2C /* LoginWireframe.swift */; };
+		03B56BB7217F7CAE00C8EA2C /* DriversWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BB6217F7CAE00C8EA2C /* DriversWireframe.swift */; };
+		03B56BBA217F7D1000C8EA2C /* TabBarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BB9217F7D1000C8EA2C /* TabBarWireframe.swift */; };
+		03B56BBC217F86BB00C8EA2C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BBB217F86BB00C8EA2C /* LoginPresenter.swift */; };
+		03B56BBE217F86C500C8EA2C /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BBD217F86C500C8EA2C /* LoginInteractor.swift */; };
+		03B56BC0217F8A9D00C8EA2C /* ProfileInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BBF217F8A9D00C8EA2C /* ProfileInterfaces.swift */; };
+		03B56BC2217F8AA700C8EA2C /* ProfileWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BC1217F8AA700C8EA2C /* ProfileWireframe.swift */; };
+		03B56BC4217F8AD100C8EA2C /* DriversInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BC3217F8AD100C8EA2C /* DriversInterfaces.swift */; };
+		03B56BC6217F8BEC00C8EA2C /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BC5217F8BEC00C8EA2C /* ProfilePresenter.swift */; };
+		03B56BC8217F8C0900C8EA2C /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BC7217F8C0900C8EA2C /* ProfileInteractor.swift */; };
+		03B56BCA217F8E1200C8EA2C /* WireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BC9217F8E1200C8EA2C /* WireframeInterface.swift */; };
+		03B56BCC217F8E1A00C8EA2C /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BCB217F8E1A00C8EA2C /* PresenterInterface.swift */; };
+		03B56BCE217F8E2300C8EA2C /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BCD217F8E2300C8EA2C /* InteractorInterface.swift */; };
+		03B56BD0217F8E5A00C8EA2C /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B56BCF217F8E5A00C8EA2C /* ViewInterface.swift */; };
 		03EE2E5221774FB100E73F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE2E5121774FB100E73F23 /* AppDelegate.swift */; };
 		03EE2E5921774FB300E73F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EE2E5821774FB300E73F23 /* Assets.xcassets */; };
 		03EE2E5C21774FB300E73F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EE2E5A21774FB300E73F23 /* LaunchScreen.storyboard */; };
@@ -31,6 +49,24 @@
 		031C42F4217F384800A22789 /* DriversVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriversVC.swift; sourceTree = "<group>"; };
 		031C42FE217F3EF000A22789 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		031C42FF217F3EF000A22789 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		031C4302217F421B00A22789 /* SessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
+		031C4305217F65C400A22789 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		031C4307217F725600A22789 /* AppWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWireframe.swift; sourceTree = "<group>"; };
+		031C4309217F745100A22789 /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		03B56BB4217F7C7300C8EA2C /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		03B56BB6217F7CAE00C8EA2C /* DriversWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversWireframe.swift; sourceTree = "<group>"; };
+		03B56BB9217F7D1000C8EA2C /* TabBarWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWireframe.swift; sourceTree = "<group>"; };
+		03B56BBB217F86BB00C8EA2C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		03B56BBD217F86C500C8EA2C /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		03B56BBF217F8A9D00C8EA2C /* ProfileInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInterfaces.swift; sourceTree = "<group>"; };
+		03B56BC1217F8AA700C8EA2C /* ProfileWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframe.swift; sourceTree = "<group>"; };
+		03B56BC3217F8AD100C8EA2C /* DriversInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversInterfaces.swift; sourceTree = "<group>"; };
+		03B56BC5217F8BEC00C8EA2C /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		03B56BC7217F8C0900C8EA2C /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		03B56BC9217F8E1200C8EA2C /* WireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeInterface.swift; sourceTree = "<group>"; };
+		03B56BCB217F8E1A00C8EA2C /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		03B56BCD217F8E2300C8EA2C /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		03B56BCF217F8E5A00C8EA2C /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		03EE2E4E21774FB100E73F23 /* FormulaOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EE2E5121774FB100E73F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03EE2E5821774FB300E73F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +132,26 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		031C4304217F65AE00A22789 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				031C4305217F65C400A22789 /* BaseWireframe.swift */,
+				03B56BC9217F8E1200C8EA2C /* WireframeInterface.swift */,
+				03B56BCB217F8E1A00C8EA2C /* PresenterInterface.swift */,
+				03B56BCD217F8E2300C8EA2C /* InteractorInterface.swift */,
+				03B56BCF217F8E5A00C8EA2C /* ViewInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		03B56BB8217F7D0100C8EA2C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				03B56BB9217F7D1000C8EA2C /* TabBarWireframe.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		03EE2E4521774FB100E73F23 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				03EE2E5121774FB100E73F23 /* AppDelegate.swift */,
+				031C4302217F421B00A22789 /* SessionInfo.swift */,
+				031C4307217F725600A22789 /* AppWireframe.swift */,
 			);
 			path = AppSpecific;
 			sourceTree = "<group>";
@@ -137,6 +195,7 @@
 		03EF4686217F0F1200182884 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03B56BB8217F7D0100C8EA2C /* TabBar */,
 				03EF4689217F0F4B00182884 /* Login */,
 				03EF4688217F0F4200182884 /* Profile */,
 				03EF4687217F0F3D00182884 /* DriverList */,
@@ -153,6 +212,8 @@
 				03EF4697217F10E200182884 /* DriverCell.xib */,
 				03EF469D217F1BB100182884 /* DriverHeaderView.swift */,
 				03EF469E217F1BB100182884 /* DriverHeaderView.xib */,
+				03B56BB6217F7CAE00C8EA2C /* DriversWireframe.swift */,
+				03B56BC3217F8AD100C8EA2C /* DriversInterfaces.swift */,
 			);
 			path = DriverList;
 			sourceTree = "<group>";
@@ -160,8 +221,12 @@
 		03EF4688217F0F4200182884 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				03B56BBF217F8A9D00C8EA2C /* ProfileInterfaces.swift */,
 				03EF46A3217F29A100182884 /* ProfileVC.swift */,
 				03EF46A4217F29A100182884 /* ProfileVC.xib */,
+				03B56BC1217F8AA700C8EA2C /* ProfileWireframe.swift */,
+				03B56BC5217F8BEC00C8EA2C /* ProfilePresenter.swift */,
+				03B56BC7217F8C0900C8EA2C /* ProfileInteractor.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -169,8 +234,12 @@
 		03EF4689217F0F4B00182884 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				031C4309217F745100A22789 /* LoginInterfaces.swift */,
+				03B56BB4217F7C7300C8EA2C /* LoginWireframe.swift */,
 				031C42FE217F3EF000A22789 /* LoginVC.swift */,
 				031C42FF217F3EF000A22789 /* LoginVC.xib */,
+				03B56BBB217F86BB00C8EA2C /* LoginPresenter.swift */,
+				03B56BBD217F86C500C8EA2C /* LoginInteractor.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -178,6 +247,7 @@
 		03EF469A217F132800182884 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				031C4304217F65AE00A22789 /* VIPER */,
 				031C42EF217F34AC00A22789 /* Device */,
 				03EF46A7217F2C8E00182884 /* Interfaces */,
 				031C42EE217F34A200A22789 /* Extensions */,
@@ -318,6 +388,7 @@
 				"${BUILT_PRODUCTS_DIR}/FormulaAPI/FormulaAPI.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -328,6 +399,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FormulaAPI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -342,14 +414,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				031C42F5217F384800A22789 /* DriversVC.swift in Sources */,
+				03B56BC6217F8BEC00C8EA2C /* ProfilePresenter.swift in Sources */,
+				03B56BBE217F86C500C8EA2C /* LoginInteractor.swift in Sources */,
+				03B56BC8217F8C0900C8EA2C /* ProfileInteractor.swift in Sources */,
 				03EF469C217F134A00182884 /* NSObject+className.swift in Sources */,
+				03B56BC0217F8A9D00C8EA2C /* ProfileInterfaces.swift in Sources */,
+				03B56BB7217F7CAE00C8EA2C /* DriversWireframe.swift in Sources */,
 				03EF46A2217F278C00182884 /* UIView+grayscale.swift in Sources */,
 				031C42F1217F34B900A22789 /* Device.swift in Sources */,
+				031C4308217F725600A22789 /* AppWireframe.swift in Sources */,
+				03B56BCC217F8E1A00C8EA2C /* PresenterInterface.swift in Sources */,
+				031C430A217F745100A22789 /* LoginInterfaces.swift in Sources */,
+				03B56BCE217F8E2300C8EA2C /* InteractorInterface.swift in Sources */,
 				03EF46A5217F29A100182884 /* ProfileVC.swift in Sources */,
 				031C4300217F3EF000A22789 /* LoginVC.swift in Sources */,
+				03B56BB5217F7C7300C8EA2C /* LoginWireframe.swift in Sources */,
 				03EF469F217F1BB100182884 /* DriverHeaderView.swift in Sources */,
 				03EF4698217F10E200182884 /* DriverCell.swift in Sources */,
+				03B56BD0217F8E5A00C8EA2C /* ViewInterface.swift in Sources */,
+				03B56BBC217F86BB00C8EA2C /* LoginPresenter.swift in Sources */,
+				03B56BC2217F8AA700C8EA2C /* ProfileWireframe.swift in Sources */,
+				031C4303217F421B00A22789 /* SessionInfo.swift in Sources */,
 				03EE2E5221774FB100E73F23 /* AppDelegate.swift in Sources */,
+				03B56BCA217F8E1200C8EA2C /* WireframeInterface.swift in Sources */,
+				03B56BC4217F8AD100C8EA2C /* DriversInterfaces.swift in Sources */,
+				031C4306217F65C400A22789 /* BaseWireframe.swift in Sources */,
+				03B56BBA217F7D1000C8EA2C /* TabBarWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
