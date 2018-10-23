@@ -16,6 +16,8 @@ class ProfileVC: UIViewController {
     
     init() {
         super.init(nibName: "ProfileVC", bundle: nil)
+        let item = UITabBarItem(title: "Profile", image: UIImage(named: "profile-unselected"), selectedImage: UIImage(named: "profile-selected"))
+        self.tabBarItem = item
     }
     
     required init?(coder aDecoder: NSCoder) {
