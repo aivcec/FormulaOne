@@ -10,7 +10,6 @@
 		031C42F1217F34B900A22789 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C42F0217F34B900A22789 /* Device.swift */; };
 		03AFCDBE217777450089D977 /* Pods_FormulaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288A4FCD7E84015FE43C6334 /* Pods_FormulaOne.framework */; };
 		03EE2E5221774FB100E73F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE2E5121774FB100E73F23 /* AppDelegate.swift */; };
-		03EE2E5421774FB100E73F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE2E5321774FB100E73F23 /* ViewController.swift */; };
 		03EE2E5921774FB300E73F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EE2E5821774FB300E73F23 /* Assets.xcassets */; };
 		03EE2E5C21774FB300E73F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EE2E5A21774FB300E73F23 /* LaunchScreen.storyboard */; };
 		03EF468C217F0F6400182884 /* DriverListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF468A217F0F6400182884 /* DriverListVC.swift */; };
@@ -29,7 +28,6 @@
 		031C42F0217F34B900A22789 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		03EE2E4E21774FB100E73F23 /* FormulaOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EE2E5121774FB100E73F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03EE2E5321774FB100E73F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03EE2E5821774FB300E73F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03EE2E5B21774FB300E73F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03EE2E5D21774FB300E73F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +75,23 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
+		031C42F2217F36B300A22789 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				03EE2E5A21774FB300E73F23 /* LaunchScreen.storyboard */,
+				03EE2E5D21774FB300E73F23 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		031C42F3217F36C000A22789 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03EE2E5821774FB300E73F23 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		03EE2E4521774FB100E73F23 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +116,8 @@
 				03EF4685217F0F0A00182884 /* AppSpecific */,
 				03EF469A217F132800182884 /* Common */,
 				03EF4686217F0F1200182884 /* Modules */,
-				03EE2E5321774FB100E73F23 /* ViewController.swift */,
-				03EE2E5821774FB300E73F23 /* Assets.xcassets */,
-				03EE2E5A21774FB300E73F23 /* LaunchScreen.storyboard */,
-				03EE2E5D21774FB300E73F23 /* Info.plist */,
+				031C42F3217F36C000A22789 /* Resources */,
+				031C42F2217F36B300A22789 /* SupportingFiles */,
 			);
 			path = FormulaOne;
 			sourceTree = "<group>";
@@ -325,7 +338,6 @@
 				03EF469C217F134A00182884 /* NSObject+className.swift in Sources */,
 				03EF46A2217F278C00182884 /* UIView+grayscale.swift in Sources */,
 				031C42F1217F34B900A22789 /* Device.swift in Sources */,
-				03EE2E5421774FB100E73F23 /* ViewController.swift in Sources */,
 				03EF46A5217F29A100182884 /* ProfileVC.swift in Sources */,
 				03EF469F217F1BB100182884 /* DriverHeaderView.swift in Sources */,
 				03EF4698217F10E200182884 /* DriverCell.swift in Sources */,
@@ -470,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46C6399N5N;
-				INFOPLIST_FILE = FormulaOne/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FormulaOne/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,7 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46C6399N5N;
-				INFOPLIST_FILE = FormulaOne/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FormulaOne/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
