@@ -11,7 +11,7 @@
 		03AFCDBE217777450089D977 /* Pods_FormulaOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288A4FCD7E84015FE43C6334 /* Pods_FormulaOne.framework */; };
 		03EE2E5221774FB100E73F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE2E5121774FB100E73F23 /* AppDelegate.swift */; };
 		03EE2E5421774FB100E73F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EE2E5321774FB100E73F23 /* ViewController.swift */; };
-		03EE2E5921774FB300E73F23 /* profile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EE2E5821774FB300E73F23 /* profile.xcassets */; };
+		03EE2E5921774FB300E73F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EE2E5821774FB300E73F23 /* Assets.xcassets */; };
 		03EE2E5C21774FB300E73F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EE2E5A21774FB300E73F23 /* LaunchScreen.storyboard */; };
 		03EF468C217F0F6400182884 /* DriverListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF468A217F0F6400182884 /* DriverListVC.swift */; };
 		03EF468D217F0F6400182884 /* DriverListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03EF468B217F0F6400182884 /* DriverListVC.xib */; };
@@ -30,7 +30,7 @@
 		03EE2E4E21774FB100E73F23 /* FormulaOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormulaOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EE2E5121774FB100E73F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03EE2E5321774FB100E73F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03EE2E5821774FB300E73F23 /* profile.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = profile.xcassets; sourceTree = "<group>"; };
+		03EE2E5821774FB300E73F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03EE2E5B21774FB300E73F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03EE2E5D21774FB300E73F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EF468A217F0F6400182884 /* DriverListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverListVC.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				03EF469A217F132800182884 /* Common */,
 				03EF4686217F0F1200182884 /* Modules */,
 				03EE2E5321774FB100E73F23 /* ViewController.swift */,
-				03EE2E5821774FB300E73F23 /* profile.xcassets */,
+				03EE2E5821774FB300E73F23 /* Assets.xcassets */,
 				03EE2E5A21774FB300E73F23 /* LaunchScreen.storyboard */,
 				03EE2E5D21774FB300E73F23 /* Info.plist */,
 			);
@@ -252,7 +252,7 @@
 			files = (
 				03EE2E5C21774FB300E73F23 /* LaunchScreen.storyboard in Resources */,
 				03EF4699217F10E200182884 /* DriverCell.xib in Resources */,
-				03EE2E5921774FB300E73F23 /* profile.xcassets in Resources */,
+				03EE2E5921774FB300E73F23 /* Assets.xcassets in Resources */,
 				03EF468D217F0F6400182884 /* DriverListVC.xib in Resources */,
 				03EF46A6217F29A100182884 /* ProfileVC.xib in Resources */,
 				03EF46A0217F1BB100182884 /* DriverHeaderView.xib in Resources */,
