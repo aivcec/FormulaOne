@@ -42,7 +42,6 @@ class DriversVC: UIViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         
-        print("Transitioning to size!")
         collectionView.collectionViewLayout.invalidateLayout()
     }
 }
