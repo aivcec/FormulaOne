@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  LoginViewController.swift
 //  FormulaOne
 //
 //  Created by Antonio Ivcec on 23/10/18.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
 
     var presenter: LoginPresenterInterface!
     
     init() {
-        super.init(nibName: "LoginVC", bundle: nil)
+        super.init(nibName: "LoginViewController", bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,6 +30,6 @@ class LoginVC: UIViewController {
     }
 }
 
-extension LoginVC: LoginViewInterface {
+extension LoginViewController: LoginViewInterface {
     
 }

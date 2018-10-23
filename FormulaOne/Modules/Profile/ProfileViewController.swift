@@ -1,5 +1,5 @@
 //
-//  ProfileVC.swift
+//  ProfileViewController.swift
 //  FormulaOne
 //
 //  Created by Antonio Ivcec on 23/10/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileVC: UIViewController {
+class ProfileViewController: UIViewController {
 
     var presenter: ProfilePresenterInterface!
     
@@ -17,7 +17,7 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var avatarWidthConstraint: NSLayoutConstraint!
     
     init() {
-        super.init(nibName: "ProfileVC", bundle: nil)
+        super.init(nibName: "ProfileViewController", bundle: nil)
         let item = UITabBarItem(title: "Profile", image: UIImage(named: "profile-unselected"), selectedImage: UIImage(named: "profile-selected"))
         self.tabBarItem = item
     }
@@ -37,6 +37,6 @@ class ProfileVC: UIViewController {
     }
 }
 
-extension ProfileVC: ProfileViewInterface {
+extension ProfileViewController: ProfileViewInterface {
     
 }

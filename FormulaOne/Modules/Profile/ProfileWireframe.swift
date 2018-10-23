@@ -8,7 +8,7 @@
 
 class ProfileWireframe: BaseWireframe {
     init() {
-        let vc = ProfileVC()
+        let vc = ProfileViewController()
         super.init(viewController: vc)
         
         let interactor = ProfileInteractor()

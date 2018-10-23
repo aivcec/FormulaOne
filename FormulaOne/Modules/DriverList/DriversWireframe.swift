@@ -9,7 +9,7 @@
 class DriversWireframe: BaseWireframe {
     
     init() {
-        let vc = DriversVC()
+        let vc = DriversViewController()
         super.init(viewController: vc)
     }
 }

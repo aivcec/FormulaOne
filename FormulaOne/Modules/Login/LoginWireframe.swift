@@ -9,7 +9,7 @@
 class LoginWireframe: BaseWireframe {
     
     init() {
-        let vc = LoginVC()
+        let vc = LoginViewController()
         super.init(viewController: vc)
         
         let interactor = LoginInteractor()

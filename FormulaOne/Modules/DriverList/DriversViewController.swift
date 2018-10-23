@@ -1,5 +1,5 @@
 //
-//  DriversVC.swift
+//  DriversViewController.swift
 //  FormulaOne
 //
 //  Created by Antonio Ivcec on 23/10/18.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class DriversVC: UIViewController {
+class DriversViewController: UIViewController {
     
     private let itemWidth: CGFloat = 120
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     init() {
-        super.init(nibName: "DriversVC", bundle: nil)
+        super.init(nibName: "DriversViewController", bundle: nil)
         view.backgroundColor = .lightGray
         let item = UITabBarItem(title: "Drivers", image: UIImage(named: "drivers-unselected"), selectedImage: UIImage(named: "drivers-selected"))
         self.tabBarItem = item
@@ -46,7 +46,7 @@ class DriversVC: UIViewController {
     }
 }
 
-extension DriversVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension DriversViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
