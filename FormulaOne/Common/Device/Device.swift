@@ -10,6 +10,8 @@ import UIKit
 
 struct Device {
     static var isSmallDevice: Bool = {
-        return UIScreen.main.bounds.width <= 320
+        let bounds = UIScreen.main.bounds
+        let smallerDimension = bounds.width < bounds.height ? bounds.width : bounds.height
+        return smallerDimension <= 320
     }()
 }
