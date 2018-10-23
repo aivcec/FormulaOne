@@ -10,14 +10,14 @@ import UIKit
 
 class BaseWireframe {
     
-    fileprivate unowned var _viewController: UIViewController
+    fileprivate unowned var unownedViewController: UIViewController
     
     //to retain view controller reference upon first access
-    fileprivate var _temporaryStoredViewController: UIViewController?
+    fileprivate var temporaryStoredViewController: UIViewController?
     
     init(viewController: UIViewController) {
-        _temporaryStoredViewController = viewController
-        _viewController = viewController
+        temporaryStoredViewController = viewController
+        unownedViewController = viewController
     }
     
 }
@@ -43,8 +43,8 @@ extension BaseWireframe: WireframeInterface {
 extension BaseWireframe {
     
     var viewController: UIViewController {
-        defer { _temporaryStoredViewController = nil }
-        return _viewController
+        defer { temporaryStoredViewController = nil }
+        return unownedViewController
     }
     
     var navigationController: UINavigationController? {
@@ -54,7 +54,6 @@ extension BaseWireframe {
         
         return viewController.navigationController
     }
-    
 }
 
 extension UINavigationController {
