@@ -12,9 +12,11 @@ PODS:
     - Alamofire (~> 4.5)
     - RxSwift (~> 4)
   - RxSwift (4.3.1)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - FormulaAPI (from `../FormulaAPI`)
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,6 +24,7 @@ SPEC REPOS:
     - CodableAlamofire
     - RxAlamofire
     - RxSwift
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   FormulaAPI:
@@ -33,7 +36,8 @@ SPEC CHECKSUMS:
   FormulaAPI: ea405001ed449ee26a00229f04c8170b7e2e7b4c
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: c3dfc8e0389ddf7844caadc151748965f66d5fd9
+PODFILE CHECKSUM: a16595e0f57b00da543e1345d34f24fca1e72ce4
 
 COCOAPODS: 1.5.3
