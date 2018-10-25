@@ -27,7 +27,6 @@ extension LoginInteractor: LoginInteractorInterface {
                     }
                     onSuccess()
                 })
-                
             }
         }
     }
