@@ -28,8 +28,6 @@ extension LoginInteractor: LoginInteractorInterface {
                     onSuccess()
                 })
                 
-            } else {
-                onError("Facebook login cancelled.")
             }
         }
     }
