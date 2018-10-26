@@ -35,7 +35,7 @@ PODS:
 DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
-  - FormulaAPI (from `../FormulaAPI`)
+  - FormulaAPI (from `https://github.com/aivcec/FormulaAPI.git`)
   - SVProgressHUD
 
 SPEC REPOS:
@@ -53,7 +53,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   FormulaAPI:
-    :path: "../FormulaAPI"
+    :git: https://github.com/aivcec/FormulaAPI.git
+
+CHECKOUT OPTIONS:
+  FormulaAPI:
+    :commit: a2547472e009ef4c34e89ba411f170fff88782ba
+    :git: https://github.com/aivcec/FormulaAPI.git
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -63,11 +68,11 @@ SPEC CHECKSUMS:
   FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
   FBSDKCoreKit: 2ab7fdbf600dc6b628ba7a49aa29d357a7b4c74e
   FBSDKLoginKit: 634fa27e72e33620eb6389253337342c03d4a407
-  FormulaAPI: ea405001ed449ee26a00229f04c8170b7e2e7b4c
+  FormulaAPI: 41a6699ba10b19b1e0221bce1e53ce5f03809201
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: c0349affe6645a1cb296f22a3667b71cdfcd183e
+PODFILE CHECKSUM: b3877990e31a17f72c834056d460a76211530ad6
 
 COCOAPODS: 1.5.3
